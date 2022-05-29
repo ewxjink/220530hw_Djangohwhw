@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}
+body {
+    font-family: 'GowunBatang-Regular';
+    Margin: 0;
+    background-color: rgb(200, 219, 202);
+}
+.nav-container {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #8eb695;
+    list-style-type: none;
+  
+  }
+  .nav-item {
+    padding: 15px;
+    cursor: pointer;
+  }
+  .nav-item a {
+    text-align: center;
+    text-decoration: none;
+    color:snow
+  }
+    
+  h1{
+      font-size: 50px;
+    margin-top: 80px;
+    color: rgb(234, 255, 234);
+    text-shadow: 1px 1px rgb(51, 51, 51);
+  }
+
+  .container img {
+      float: right;
+      margin-top: 5px;
+      margin-right: 5%;
+  }
+  .container {
+      margin-left: 10%;
+  }
+
+  .bibi-play-circle {
+      cursor: pointer;
+      margin-left: 5%;
+  }
+  .bibi-caret-right{
+    cursor: pointer;
+    margin-left: 5%;
+
+  }
+  .watchpeanuts {
+      padding-left: 45px;
+      display: flex;
+      color: rgb(114, 128, 115);
+      text-shadow: 1px 1px rgb(98, 104, 99);
+  }
+  p {
+      font-size: 20px;
+  }
+  .nav-item:hover{
+    background-color: rgb(91, 128, 109);
+}
+.nav-item:active{
+    background-color: rgb(58, 87, 72);
+}
+.thispage{
+    background-color: rgb(58, 87, 72);
+}
