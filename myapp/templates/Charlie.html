@@ -11,18 +11,18 @@
   <body>
     <nav>
       <ul class="nav-container">
-        <li class="nav-item"><a href="introduce.html">Main</a></li>
-        <li class="nav-item"><a href="prac.html">시간표</a></li>
-        <li class="nav-item"><a href="image.html">갤러리</a></li>
-        <li class="nav-item"><a href="test.html">소개 페이지</a></li>
+        <li class="nav-item"><a href="{% url 'introduce' %}">Main</a></li>
+        <li class="nav-item"><a href="{% url 'prac' %}">시간표</a></li>
+        <li class="nav-item"><a href="{% url 'image' %}">갤러리</a></li>
+        <li class="nav-item"><a href="{% url 'test' %}">소개 페이지</a></li>
         <div class="thispage">
-          <li class="nav-item"><a href="Charlie.html">찰리브라운</a></li>
+          <li class="nav-item"><a href="{% url 'Charlie' %}">찰리브라운</a></li>
         </div>
       </ul>
     </nav>
     {% endblock %} {% block footer %}
     <div class="container">
-      <img src="charlieimg.png" />
+      <img src="{% static 'img/charlieimg.png' %}" />
       <h1>Charlie Brown</h1>
       <h2>스누피의 주인!</h2>
       <p>잘하는 게 없고 소심한 만화 '피너츠' 속 비운의 주인공.</p>

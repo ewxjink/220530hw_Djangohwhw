@@ -22,12 +22,12 @@
     <nav>
       <ul class="nav-container">
         <div class="thispage">
-          <li class="nav-item"><a href="introduce.html">Main</a></li>
+          <li class="nav-item"><a href="{% url 'introduce' %}">Main</a></li>
         </div>
-        <li class="nav-item"><a href="prac.html">시간표</a></li>
-        <li class="nav-item"><a href="image.html">갤러리</a></li>
-        <li class="nav-item"><a href="test.html">소개 페이지</a></li>
-        <li class="nav-item"><a href="Charlie.html">찰리브라운</a></li>
+        <li class="nav-item"><a href="{% url 'prac' %}">시간표</a></li>
+        <li class="nav-item"><a href="{% url 'image' %}">갤러리</a></li>
+        <li class="nav-item"><a href="{% url 'test' %}">소개 페이지</a></li>
+        <li class="nav-item"><a href="{% url 'Charlie' %}">찰리브라운</a></li>
       </ul>
     </nav>
     {% endblock %} {% block footer %}
