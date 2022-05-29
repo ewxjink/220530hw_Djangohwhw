@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% block content %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,6 +30,7 @@
         <li class="nav-item"><a href="Charlie.html">찰리브라운</a></li>
       </ul>
     </nav>
+    {% endblock %} {% block footer %}
     <div class="container">
       <img src="{% static 'img/meimage.jpeg' %}" alt="사진" />
       <img class="charlie" src="{% static 'img/charliebrown.png' %}" />
@@ -85,3 +86,4 @@
     </div>
   </body>
 </html>
+{% endblock %}

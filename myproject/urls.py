@@ -19,4 +19,8 @@ import myapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', myapp.views.introduce, name="introduce"),
+    path('Charlie/', myapp.views.Charlie, name="Charlie"),
+    path('test/', myapp.views.test, name="test"),
+    path('prac/', myapp.views.prac, name="prac"),
+    path('image/', myapp.views.image, name="image"),
 ]

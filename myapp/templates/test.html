@@ -1,8 +1,12 @@
+{% extends 'introduce.html' %}
+{% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="test.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
         <title>소개 페이지</title>
     </head>
     <body>
@@ -21,7 +25,8 @@
                 <li class="nav-item"><a href="Charlie.html">찰리브라운</a></li>
             </ul>
         </nav>
-
+        {% endblock %}
+        {% block footer %}
         <nav>
             <h2>소개 순서</h2>
             <ol>
@@ -108,3 +113,4 @@
         </footer>
     </body>
 </html>
+{% endblock %}

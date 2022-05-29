@@ -1,3 +1,7 @@
+{% extends 'introduce.html' %}
+{% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고유진의 시간표</title>
-    <link rel="stylesheet" href="prac.css">
+    <link rel="stylesheet" href="{% static 'css/prac.css' %}">
 </head>
 <body>
     <header><h1>시간표 - 202212070  고유진</h1></header>
@@ -20,7 +24,8 @@
             <li class="nav-item"><a href="Charlie.html">찰리브라운</a></li>
         </ul>
     </nav>
-    
+    {% endblock %}
+    {% block footer %}
     <table border="3" width="600" height ="700">
         <tr>
             <th class="jb-th-1">&nbsp;</th>
@@ -181,3 +186,4 @@
     </table>
 </body>
 </html>
+{% endblock %}
