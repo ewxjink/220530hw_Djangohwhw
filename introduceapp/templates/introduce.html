@@ -1,4 +1,4 @@
-{% load static %} {% block content %}
+{% load static %} {% block title %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,18 +19,17 @@
     />
   </head>
   <body>
+    {% endblock %}
     <nav>
       <ul class="nav-container">
-        <div class="thispage">
-          <li class="nav-item"><a href="{% url 'introduce' %}">Main</a></li>
-        </div>
+        <li class="nav-item"><a href="{% url 'introduce' %}">Main</a></li>
         <li class="nav-item"><a href="{% url 'prac' %}">시간표</a></li>
         <li class="nav-item"><a href="{% url 'image' %}">갤러리</a></li>
         <li class="nav-item"><a href="{% url 'test' %}">소개 페이지</a></li>
         <li class="nav-item"><a href="{% url 'Charlie' %}">찰리브라운</a></li>
       </ul>
     </nav>
-    {% endblock %} {% block footer %}
+    {% block content %}
     <div class="container">
       <img src="{% static 'img/meimage.jpeg' %}" alt="사진" />
       <img class="charlie" src="{% static 'img/charliebrown.png' %}" />

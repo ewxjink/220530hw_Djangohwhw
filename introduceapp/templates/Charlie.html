@@ -1,4 +1,4 @@
-{% extends 'introduce.html' %} {% load static %} {% block content %}
+{% extends 'introduce.html' %} {% load static %} {% block title %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{% static 'css/charlie.css' %}" />
   </head>
   <body>
-    <nav>
+    {% endblock %}
+    <!-- <nav>
       <ul class="nav-container">
         <li class="nav-item"><a href="{% url 'introduce' %}">Main</a></li>
         <li class="nav-item"><a href="{% url 'prac' %}">시간표</a></li>
@@ -19,8 +20,8 @@
           <li class="nav-item"><a href="{% url 'Charlie' %}">찰리브라운</a></li>
         </div>
       </ul>
-    </nav>
-    {% endblock %} {% block footer %}
+    </nav> -->
+    {% block content %}
     <div class="container">
       <img src="{% static 'img/charlieimg.png' %}" />
       <h1>Charlie Brown</h1>
